@@ -1,4 +1,3 @@
----
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
@@ -7,37 +6,38 @@ rules:
   ##
   ## Base operator rules
   ##
-  - apiGroups:
-    - ""
-    resources:
-    - secrets
-    - pods
-    - pods/exec
-    - pods/log
-    - namespaces
-    verbs:
-    - create
-    - delete
-    - get
-    - list
-    - patch
-    - update
-    - watch
-  - apiGroups:
-    - apps
-    resources:
-    - deployments
-    - daemonsets
-    - replicasets
-    - statefulsets
-    verbs:
-    - create
-    - delete
-    - get
-    - list
-    - patch
-    - update
-    - watch
+- apiGroups:
+  - ""
+  resources:
+  - secrets
+  - pods
+  - pods/exec
+  - pods/log
+  - namespaces
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - apps
+  resources:
+  - deployments
+  - daemonsets
+  - replicasets
+  - statefulsets
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+#
 - apiGroups:
   - ""
   resources:
@@ -56,8 +56,8 @@ rules:
   - patch
   - update
   - watch
-  ##
-  ## Rules for example.com/v1alpha1, Kind: Goweb
+##
+  ## Rules for goweb.com/v1alpha1, Kind: GoWebApp
   ##
 - apiGroups:
   - example.com
