@@ -15,8 +15,8 @@
           app: goweb
         ports:
           - protocol: TCP
-            port: 8080
-            targetPort: 8080
+            port: 3000
+            targetPort: 3000
 - name: deploy go app
   vars:
     goweb:
@@ -47,7 +47,7 @@
               imagePullPolicy: Always
               ports:
               - name: web-server
-                containerPort: 8080
+                containerPort: 3000
               securityContext: {}
           serviceAccountName: goweb-operator
           serviceAccount: goweb-operator
@@ -70,4 +70,4 @@
           name: goweb
           weight: 100
         port:
-          targetPort: 8080
+          targetPort: 3000
