@@ -8,36 +8,36 @@ rules:
   ## Base operator rules
   ##
   - apiGroups:
-      - ""
+    - ""
     resources:
-      - secrets
-      - pods
-      - pods/exec
-      - pods/log
-      - namespaces
+    - secrets
+    - pods
+    - pods/exec
+    - pods/log
+    - namespaces
     verbs:
-      - create
-      - delete
-      - get
-      - list
-      - patch
-      - update
-      - watch
+    - create
+    - delete
+    - get
+    - list
+    - patch
+    - update
+    - watch
   - apiGroups:
-      - apps
+    - apps
     resources:
-      - deployments
-      - daemonsets
-      - replicasets
-      - statefulsets
+    - deployments
+    - daemonsets
+    - replicasets
+    - statefulsets
     verbs:
-      - create
-      - delete
-      - get
-      - list
-      - patch
-      - update
-      - watch
+    - create
+    - delete
+    - get
+    - list
+    - patch
+    - update
+    - watch
   #
 - apiGroups:
   - ""
@@ -61,19 +61,19 @@ rules:
   ## Rules for example.com/v1alpha1, Kind: Goweb
   ##
   - apiGroups:
-      - example.com
+    - example.com
     resources:
-      - gowebs
-      - gowebs/status
-      - gowebs/finalizers
+    - gowebs
+    - gowebs/status
+    - gowebs/finalizers
     verbs:
-      - create
-      - delete
-      - get
-      - list
-      - patch
-      - update
-      - watch
+    - create
+    - delete
+    - get
+    - list
+    - patch
+    - update
+    - watch
 - verbs:
   - "*"
   apiGroups:
