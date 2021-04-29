@@ -1,0 +1,11 @@
+---
+# vars file for Goweb
+gowebfront:
+  image: docker.io/ishasangrolkar/demo-app:latest
+  imagePullSecrets: []
+  replicaCount: 1
+  
+  service:
+    type: NodePort
+    port: 8080
+    targetPort: 8080

@@ -1,0 +1,20 @@
+# permissions for end users to view gowebs.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: goweb-viewer-role
+rules:
+- apiGroups:
+  - example.com
+  resources:
+  - gowebs
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - example.com
+  resources:
+  - gowebs/status
+  verbs:
+  - get
