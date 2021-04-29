@@ -12,7 +12,7 @@ spec:
     singular: goweb
   scope: Namespaced
   subresources:
-      status: {}
+    status: {}
   validation:
     openAPIV3Schema:
       type: object
