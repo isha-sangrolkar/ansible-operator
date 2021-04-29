@@ -38,7 +38,6 @@ rules:
     - patch
     - update
     - watch
-  #
 - apiGroups:
   - ""
   resources:
@@ -60,20 +59,20 @@ rules:
   ##
   ## Rules for example.com/v1alpha1, Kind: Goweb
   ##
-  - apiGroups:
-    - example.com
-    resources:
-    - gowebs
-    - gowebs/status
-    - gowebs/finalizers
-    verbs:
-    - create
-    - delete
-    - get
-    - list
-    - patch
-    - update
-    - watch
+- apiGroups:
+  - example.com
+  resources:
+  - gowebs
+  - gowebs/status
+  - gowebs/finalizers
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
 - verbs:
   - "*"
   apiGroups:
