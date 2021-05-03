@@ -35,5 +35,5 @@ spec:
             - name: OPERATOR_NAME
               value: "goweb-operator"
             - name: RELATED_IMAGE_FRONTEND
-              value: quay.io/isha98/goweb-operator
+              value: docker.io/ishasangrolkar/demo-app:latest
       terminationGracePeriodSeconds: 10
